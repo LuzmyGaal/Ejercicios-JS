@@ -67,7 +67,7 @@ piernas
 piecitos
 pulmones
 
-
+/*
 function respirar {
     pulmonesParaRespirar
 }
@@ -98,4 +98,4 @@ function calcularAreaTriangulo {
 }
 
 
-//CamelCase
+//CamelCase*/

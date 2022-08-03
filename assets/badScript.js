@@ -4,7 +4,7 @@ var second = "1s";
 
 // Why doesn't it work?
 //Es una palabra reservada, no se puede declrarar como una variable.
-var if_condition =  if;
+var if_condition =  iif;
 
 
 // Should equal formula for wild wings

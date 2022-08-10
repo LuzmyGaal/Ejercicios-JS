@@ -171,3 +171,26 @@ function evalDate(day) {
 
 alert(evalDate(dia));
 
+var nineros = prompt("Ingrese su deposito");
+
+//Si queremos hacer comparaciones
+function miCarrito(dinero) {
+    switch(true) {
+        case (dinero <= 10):
+            return "Churrumais";
+            break;
+        case (dinero <= 50):
+            return "McTrio";
+            break;
+        case (dinero <= 100):
+            return "Chilaquiles verdes c/ poio y 1/2L de naranja";
+            break;
+        case (dinero <= 500):
+            return "1/2kg de chicharrones y 1 boleto al cine";
+            break;
+        default:
+            return "No hay nineros";
+    }
+}
+
+alert(miCarrito(nineros));

@@ -166,3 +166,41 @@ fetch('https://pokeapi.co/api/v2/pokemon/pikachu') //realizamos la peticion a la
         console.log("El nombre de nuestro pokemon es: ",
             info.name, "y su numero es: ", info.id);
     });
+
+
+    //Solicitud GET 
+    fetch("https://fakestoreapi.com/products/10") //realizamos la peticion a una URL
+    .then((datos) => {
+      //cuando la promesa es resuelta, entonces ejecutamos esta funcion
+      return datos.json(); //convertimos la respuesta a un formato JSON
+    })
+    .then((info) => {
+      //cuando la promesa es resuelta, entonces ejecutamos esta funcion. Estamos usando el metodo .then para obtener la respuesta de la promesa y guardarla en la variable info. Gracias a esto podre obtener la informacion que queremos.
+      console.log(
+        "El nombre de nuestro producto es:",
+        info.title,
+        " y su precio es: ",
+        info.price
+      ); //imprimimos el nombre del producto. esto es posible por que la respuesta ya esta en formato JSON, y podemos acceder a los datos directamente, especificando el nombre del campo que queremos.
+    });
+
+    /* APIS DE ALMACENAMIENTO WEB
+
+
+la API de almacenamiento web define dos mecanismos de almacenamiento que son muy importantes
+
+- almacenamiento local
+- almacenamiento de sesiones
+
+Tanto el almacenamiento local como el de sesiones proporcionan una area privada para sus datos, esto quiere decir que otros sitios web no pueden acceder a esta informacion
+
+
+Algunas caracteristicas que comparten el local y el session storage son:
+
+    - La capacidad (5Mb a diferencia de los 4Kb de las cookies)
+    - La informacion es almacenada en pares clave/valor, por lo que se puede usar como si fueran variables.
+    - El almacenamiento web solo es accesible en el navegador, no se envia al servidor como lo hacen las cookies.
+    
+
+*/
+
